@@ -5,7 +5,7 @@ services:
     container_name: pgvector_db_container
     image: ankane/pgvector
     ports:
-      - 5433:5432
+      - 5432:5432
     restart: unless-stopped
     environment:
       - POSTGRES_DB=${POSTGRES_DB}
